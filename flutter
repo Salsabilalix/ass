@@ -1,0 +1,59 @@
+#1
+void main() {
+  
+  myName ("bella");
+
+}
+void myName (String name){
+  print ("my name is $name");
+  
+}
+#2
+void main() {
+  printEvenNumbers (1,6);
+  
+
+}
+  void printEvenNumbers (int x,int y){
+    for (int i=1 ; i<=6 ; i++){
+      if (i%2==0){
+        print (i);
+      }
+    }
+  }
+#5
+void main() {
+  double a = 3; 
+  double b = 4; 
+
+  double hypotenuse = calculateHypotenuse(a, b);
+
+  print('The length of the hypotenuse is: $hypotenuse');
+}
+
+double calculateHypotenuse(double a, double b) {
+  return sqrt(pow(a, 2) + pow(b, 2)); 
+}
+#6
+void main() {
+  String name = 'bella';
+  String reversedName = reverseString(name);
+  print('$reversedName');
+}
+
+String reverseString(String name) {
+  return name.split('').reversed.join('');
+}
+#7
+void main() {
+  double base = 5;   
+  double exponent = 3;
+
+  double result = calculatePower(base, exponent);
+
+  print('$base^$exponent = $result');
+}
+
+double calculatePower(double base, double exponent) {
+  return pow(base, exponent); // This should work correctly
+}
